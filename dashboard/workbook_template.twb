@@ -1,0 +1,1211 @@
+<?xml version='1.0' encoding='utf-8'?>
+<workbook xmlns:user="http://www.tableausoftware.com/xml/user" original-version="18.1" source-build="2026.2.1 (20262.26.0708.1337)" source-platform="mac" version="18.1">
+  <document-format-change-manifest>
+    <AccessibleZoneTabOrder/>
+    <AnimationOnByDefault/>
+    <AutoCreateAndUpdateDSDPhoneLayouts/>
+    <IntuitiveSorting/>
+    <IntuitiveSorting_SP2/>
+    <MarkAnimation/>
+    <ObjectModelEncapsulateLegacy/>
+    <ObjectModelExtractV2/>
+    <ObjectModelTableType/>
+    <SchemaViewerObjectModel/>
+    <SetMembershipControl/>
+    <SheetIdentifierTracking/>
+    <VConnDownstreamExtractsWithWarnings/>
+    <WindowsPersistSimpleIdentifiers/>
+    <_.fcp.WorkbookFingerprinting.true...WorkbookFingerprinting/>
+  </document-format-change-manifest>
+  <preferences>
+    <preference name="ui.encoding.shelf.height" value="24"/>
+    <preference name="ui.shelf.height" value="26"/>
+  </preferences>
+  <datasources>
+    <datasource caption="state_recommendations" inline="true" name="federated.1u2efw001eayuc1b26b3f1cvisw0" version="18.1">
+      <connection class="federated">
+        <named-connections>
+          <named-connection caption="state_recommendations" name="textscan.0m2ncy31atvo0o17s6rlf1oqhm0a">
+            <connection class="textscan" directory="Data" filename="state_recommendations.csv" password="" server=""/>
+          </named-connection>
+        </named-connections>
+        <relation connection="textscan.0m2ncy31atvo0o17s6rlf1oqhm0a" name="state_recommendations.csv" table="[state_recommendations#csv]" type="table">
+          <columns character-set="UTF-8" header="yes" locale="zh" separator=",">
+            <column datatype="string" name="state" ordinal="0"/>
+            <column datatype="integer" name="baseline_rank" ordinal="1"/>
+            <column datatype="real" name="baseline_score" ordinal="2"/>
+            <column datatype="integer" name="delivered_orders" ordinal="3"/>
+            <column datatype="real" name="late_delivery_rate_pct" ordinal="4"/>
+            <column datatype="real" name="negative_review_rate_pct" ordinal="5"/>
+            <column datatype="real" name="order_growth_pct" ordinal="6"/>
+            <column datatype="real" name="orders_per_seller" ordinal="7"/>
+            <column datatype="string" name="recommendation" ordinal="8"/>
+            <column datatype="string" name="risk_flag" ordinal="9"/>
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class="capability">
+            <remote-name/>
+            <remote-type>0</remote-type>
+            <parent-name>[state_recommendations.csv]</parent-name>
+            <remote-alias/>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype="string" name="character-set">"UTF-8"</attribute>
+              <attribute datatype="string" name="collation">"zh_Hans_CN"</attribute>
+              <attribute datatype="string" name="currency">"¤"</attribute>
+              <attribute datatype="string" name="debit-close-char">""</attribute>
+              <attribute datatype="string" name="debit-open-char">"XXX"</attribute>
+              <attribute datatype="string" name="field-delimiter">","</attribute>
+              <attribute datatype="string" name="header-row">"true"</attribute>
+              <attribute datatype="string" name="locale">"zh"</attribute>
+              <attribute datatype="string" name="single-char">""</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class="column">
+            <remote-name>state</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[state]</local-name>
+            <parent-name>[state_recommendations.csv]</parent-name>
+            <remote-alias>state</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag="0" name="LZH_RCN"/>
+            <object-id>[state_recommendations.csv_FE20A4D14BDE4030BD5C27C3872A8844]</object-id>
+          </metadata-record>
+          <metadata-record class="column">
+            <remote-name>baseline_rank</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[baseline_rank]</local-name>
+            <parent-name>[state_recommendations.csv]</parent-name>
+            <remote-alias>baseline_rank</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[state_recommendations.csv_FE20A4D14BDE4030BD5C27C3872A8844]</object-id>
+          </metadata-record>
+          <metadata-record class="column">
+            <remote-name>baseline_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[baseline_score]</local-name>
+            <parent-name>[state_recommendations.csv]</parent-name>
+            <remote-alias>baseline_score</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[state_recommendations.csv_FE20A4D14BDE4030BD5C27C3872A8844]</object-id>
+          </metadata-record>
+          <metadata-record class="column">
+            <remote-name>delivered_orders</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[delivered_orders]</local-name>
+            <parent-name>[state_recommendations.csv]</parent-name>
+            <remote-alias>delivered_orders</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[state_recommendations.csv_FE20A4D14BDE4030BD5C27C3872A8844]</object-id>
+          </metadata-record>
+          <metadata-record class="column">
+            <remote-name>late_delivery_rate_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[late_delivery_rate_pct]</local-name>
+            <parent-name>[state_recommendations.csv]</parent-name>
+            <remote-alias>late_delivery_rate_pct</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[state_recommendations.csv_FE20A4D14BDE4030BD5C27C3872A8844]</object-id>
+          </metadata-record>
+          <metadata-record class="column">
+            <remote-name>negative_review_rate_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[negative_review_rate_pct]</local-name>
+            <parent-name>[state_recommendations.csv]</parent-name>
+            <remote-alias>negative_review_rate_pct</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[state_recommendations.csv_FE20A4D14BDE4030BD5C27C3872A8844]</object-id>
+          </metadata-record>
+          <metadata-record class="column">
+            <remote-name>order_growth_pct</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[order_growth_pct]</local-name>
+            <parent-name>[state_recommendations.csv]</parent-name>
+            <remote-alias>order_growth_pct</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[state_recommendations.csv_FE20A4D14BDE4030BD5C27C3872A8844]</object-id>
+          </metadata-record>
+          <metadata-record class="column">
+            <remote-name>orders_per_seller</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[orders_per_seller]</local-name>
+            <parent-name>[state_recommendations.csv]</parent-name>
+            <remote-alias>orders_per_seller</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[state_recommendations.csv_FE20A4D14BDE4030BD5C27C3872A8844]</object-id>
+          </metadata-record>
+          <metadata-record class="column">
+            <remote-name>recommendation</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[recommendation]</local-name>
+            <parent-name>[state_recommendations.csv]</parent-name>
+            <remote-alias>recommendation</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag="0" name="LZH_RCN"/>
+            <object-id>[state_recommendations.csv_FE20A4D14BDE4030BD5C27C3872A8844]</object-id>
+          </metadata-record>
+          <metadata-record class="column">
+            <remote-name>risk_flag</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[risk_flag]</local-name>
+            <parent-name>[state_recommendations.csv]</parent-name>
+            <remote-alias>risk_flag</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag="0" name="LZH_RCN"/>
+            <object-id>[state_recommendations.csv_FE20A4D14BDE4030BD5C27C3872A8844]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled="yes"/>
+      <column caption="state_recommendations.csv" datatype="table" name="[__tableau_internal_object_id__].[state_recommendations.csv_FE20A4D14BDE4030BD5C27C3872A8844]" role="measure" type="quantitative"/>
+      <column caption="Baseline Rank" datatype="integer" name="[baseline_rank]" role="measure" type="quantitative"/>
+      <column caption="Baseline Score" datatype="real" name="[baseline_score]" role="measure" type="quantitative"/>
+      <column caption="Delivered Orders" datatype="integer" name="[delivered_orders]" role="measure" type="quantitative"/>
+      <column caption="Late Delivery Rate Pct" datatype="real" name="[late_delivery_rate_pct]" role="measure" type="quantitative"/>
+      <column caption="Negative Review Rate Pct" datatype="real" name="[negative_review_rate_pct]" role="measure" type="quantitative"/>
+      <column caption="Order Growth Pct" datatype="real" name="[order_growth_pct]" role="measure" type="quantitative"/>
+      <column caption="Orders Per Seller" datatype="real" name="[orders_per_seller]" role="measure" type="quantitative"/>
+      <column caption="Recommendation" datatype="string" name="[recommendation]" role="dimension" type="nominal"/>
+      <column caption="Risk Flag" datatype="string" name="[risk_flag]" role="dimension" type="nominal"/>
+      <column caption="State" datatype="string" name="[state]" role="dimension" semantic-role="[State].[Name]" type="nominal"/>
+      <extract count="-1" enabled="true" object-id="" units="records" user-specific="false">
+        <connection access_mode="readonly" author-locale="zh_CN" class="hyper" dbname="Data/tableau/state_recommendations.hyper" default-settings="hyper" schema="Extract" sslmode="" tablename="Extract" update-time="08/27/2026 01:35:26 AM" username="tableau_internal_user">
+          <relation name="Extract" table="[Extract].[Extract]" type="table"/>
+          <metadata-records>
+            <metadata-record class="column">
+              <remote-name>state</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[state]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>state</remote-alias>
+              <ordinal>0</ordinal>
+              <family>state_recommendations.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag="0" name="LZH_RCN"/>
+            </metadata-record>
+            <metadata-record class="column">
+              <remote-name>baseline_rank</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[baseline_rank]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>baseline_rank</remote-alias>
+              <ordinal>1</ordinal>
+              <family>state_recommendations.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class="column">
+              <remote-name>baseline_score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[baseline_score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>baseline_score</remote-alias>
+              <ordinal>2</ordinal>
+              <family>state_recommendations.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class="column">
+              <remote-name>delivered_orders</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[delivered_orders]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>delivered_orders</remote-alias>
+              <ordinal>3</ordinal>
+              <family>state_recommendations.csv</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class="column">
+              <remote-name>late_delivery_rate_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[late_delivery_rate_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>late_delivery_rate_pct</remote-alias>
+              <ordinal>4</ordinal>
+              <family>state_recommendations.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class="column">
+              <remote-name>negative_review_rate_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[negative_review_rate_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>negative_review_rate_pct</remote-alias>
+              <ordinal>5</ordinal>
+              <family>state_recommendations.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class="column">
+              <remote-name>order_growth_pct</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[order_growth_pct]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>order_growth_pct</remote-alias>
+              <ordinal>6</ordinal>
+              <family>state_recommendations.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class="column">
+              <remote-name>orders_per_seller</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[orders_per_seller]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>orders_per_seller</remote-alias>
+              <ordinal>7</ordinal>
+              <family>state_recommendations.csv</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>16</approx-count>
+              <contains-null>true</contains-null>
+            </metadata-record>
+            <metadata-record class="column">
+              <remote-name>recommendation</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[recommendation]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>recommendation</remote-alias>
+              <ordinal>8</ordinal>
+              <family>state_recommendations.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>5</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag="0" name="LZH_RCN"/>
+            </metadata-record>
+            <metadata-record class="column">
+              <remote-name>risk_flag</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[risk_flag]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>risk_flag</remote-alias>
+              <ordinal>9</ordinal>
+              <family>state_recommendations.csv</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>3</approx-count>
+              <contains-null>true</contains-null>
+              <collation flag="0" name="LZH_RCN"/>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering="alphabetic" measure-ordering="alphabetic" show-structure="true"/>
+      <semantic-values>
+        <semantic-value key="[Country].[Name]" value="&quot;美国&quot;"/>
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption="state_recommendations.csv" id="state_recommendations.csv_FE20A4D14BDE4030BD5C27C3872A8844">
+            <properties context="">
+              <relation connection="textscan.0m2ncy31atvo0o17s6rlf1oqhm0a" name="state_recommendations.csv" table="[state_recommendations#csv]" type="table">
+                <columns character-set="UTF-8" header="yes" locale="zh" separator=",">
+                  <column datatype="string" name="state" ordinal="0"/>
+                  <column datatype="integer" name="baseline_rank" ordinal="1"/>
+                  <column datatype="real" name="baseline_score" ordinal="2"/>
+                  <column datatype="integer" name="delivered_orders" ordinal="3"/>
+                  <column datatype="real" name="late_delivery_rate_pct" ordinal="4"/>
+                  <column datatype="real" name="negative_review_rate_pct" ordinal="5"/>
+                  <column datatype="real" name="order_growth_pct" ordinal="6"/>
+                  <column datatype="real" name="orders_per_seller" ordinal="7"/>
+                  <column datatype="string" name="recommendation" ordinal="8"/>
+                  <column datatype="string" name="risk_flag" ordinal="9"/>
+                </columns>
+              </relation>
+            </properties>
+            <properties context="extract">
+              <relation name="Extract" table="[Extract].[Extract]" type="table"/>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+    <datasource caption="tableau_kpis" inline="true" name="federated.0n6jrm1145x01b10n5ev31i1sjlh" version="18.1">
+      <connection class="federated">
+        <named-connections>
+          <named-connection caption="tableau_kpis" name="textscan.0s96jzo051r9zd1gkli611p9oeem">
+            <connection class="textscan" directory="Data" filename="tableau_kpis.csv" password="" server=""/>
+          </named-connection>
+        </named-connections>
+        <relation connection="textscan.0s96jzo051r9zd1gkli611p9oeem" name="tableau_kpis.csv" table="[tableau_kpis#csv]" type="table">
+          <columns character-set="UTF-8" header="yes" locale="en_US" separator=",">
+            <column datatype="date" name="analysis_start" ordinal="0"/>
+            <column datatype="date" name="analysis_end" ordinal="1"/>
+            <column datatype="integer" name="delivered_orders" ordinal="2"/>
+            <column datatype="real" name="product_revenue" ordinal="3"/>
+            <column datatype="real" name="avg_order_value" ordinal="4"/>
+            <column datatype="real" name="avg_delivery_days" ordinal="5"/>
+            <column datatype="real" name="late_orders" ordinal="6"/>
+            <column datatype="real" name="late_delivery_rate" ordinal="7"/>
+            <column datatype="integer" name="reviewed_orders" ordinal="8"/>
+            <column datatype="real" name="avg_review_score" ordinal="9"/>
+            <column datatype="real" name="negative_review_rate" ordinal="10"/>
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class="capability">
+            <remote-name/>
+            <remote-type>0</remote-type>
+            <parent-name>[tableau_kpis.csv]</parent-name>
+            <remote-alias/>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype="string" name="character-set">"UTF-8"</attribute>
+              <attribute datatype="string" name="collation">"en_US"</attribute>
+              <attribute datatype="string" name="field-delimiter">","</attribute>
+              <attribute datatype="string" name="header-row">"true"</attribute>
+              <attribute datatype="string" name="locale">"en_US"</attribute>
+              <attribute datatype="string" name="single-char">""</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class="column">
+            <remote-name>analysis_start</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[analysis_start]</local-name>
+            <parent-name>[tableau_kpis.csv]</parent-name>
+            <remote-alias>analysis_start</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_kpis.csv_BEC55B9FDA65499E99C3A5EB76224213]</object-id>
+          </metadata-record>
+          <metadata-record class="column">
+            <remote-name>analysis_end</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[analysis_end]</local-name>
+            <parent-name>[tableau_kpis.csv]</parent-name>
+            <remote-alias>analysis_end</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_kpis.csv_BEC55B9FDA65499E99C3A5EB76224213]</object-id>
+          </metadata-record>
+          <metadata-record class="column">
+            <remote-name>delivered_orders</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[delivered_orders]</local-name>
+            <parent-name>[tableau_kpis.csv]</parent-name>
+            <remote-alias>delivered_orders</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_kpis.csv_BEC55B9FDA65499E99C3A5EB76224213]</object-id>
+          </metadata-record>
+          <metadata-record class="column">
+            <remote-name>product_revenue</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[product_revenue]</local-name>
+            <parent-name>[tableau_kpis.csv]</parent-name>
+            <remote-alias>product_revenue</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_kpis.csv_BEC55B9FDA65499E99C3A5EB76224213]</object-id>
+          </metadata-record>
+          <metadata-record class="column">
+            <remote-name>avg_order_value</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_order_value]</local-name>
+            <parent-name>[tableau_kpis.csv]</parent-name>
+            <remote-alias>avg_order_value</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_kpis.csv_BEC55B9FDA65499E99C3A5EB76224213]</object-id>
+          </metadata-record>
+          <metadata-record class="column">
+            <remote-name>avg_delivery_days</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_delivery_days]</local-name>
+            <parent-name>[tableau_kpis.csv]</parent-name>
+            <remote-alias>avg_delivery_days</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_kpis.csv_BEC55B9FDA65499E99C3A5EB76224213]</object-id>
+          </metadata-record>
+          <metadata-record class="column">
+            <remote-name>late_orders</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[late_orders]</local-name>
+            <parent-name>[tableau_kpis.csv]</parent-name>
+            <remote-alias>late_orders</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_kpis.csv_BEC55B9FDA65499E99C3A5EB76224213]</object-id>
+          </metadata-record>
+          <metadata-record class="column">
+            <remote-name>late_delivery_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[late_delivery_rate]</local-name>
+            <parent-name>[tableau_kpis.csv]</parent-name>
+            <remote-alias>late_delivery_rate</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_kpis.csv_BEC55B9FDA65499E99C3A5EB76224213]</object-id>
+          </metadata-record>
+          <metadata-record class="column">
+            <remote-name>reviewed_orders</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[reviewed_orders]</local-name>
+            <parent-name>[tableau_kpis.csv]</parent-name>
+            <remote-alias>reviewed_orders</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_kpis.csv_BEC55B9FDA65499E99C3A5EB76224213]</object-id>
+          </metadata-record>
+          <metadata-record class="column">
+            <remote-name>avg_review_score</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[avg_review_score]</local-name>
+            <parent-name>[tableau_kpis.csv]</parent-name>
+            <remote-alias>avg_review_score</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_kpis.csv_BEC55B9FDA65499E99C3A5EB76224213]</object-id>
+          </metadata-record>
+          <metadata-record class="column">
+            <remote-name>negative_review_rate</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[negative_review_rate]</local-name>
+            <parent-name>[tableau_kpis.csv]</parent-name>
+            <remote-alias>negative_review_rate</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[tableau_kpis.csv_BEC55B9FDA65499E99C3A5EB76224213]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled="yes"/>
+      <column caption="tableau_kpis.csv" datatype="table" name="[__tableau_internal_object_id__].[tableau_kpis.csv_BEC55B9FDA65499E99C3A5EB76224213]" role="measure" type="quantitative"/>
+      <column caption="Analysis End" datatype="date" name="[analysis_end]" role="dimension" type="ordinal"/>
+      <column caption="Analysis Start" datatype="date" name="[analysis_start]" role="dimension" type="ordinal"/>
+      <column caption="Avg Delivery Days" datatype="real" name="[avg_delivery_days]" role="measure" type="quantitative"/>
+      <column caption="Avg Order Value" datatype="real" name="[avg_order_value]" role="measure" type="quantitative"/>
+      <column caption="Avg Review Score" datatype="real" name="[avg_review_score]" role="measure" type="quantitative"/>
+      <column caption="Delivered Orders" datatype="integer" name="[delivered_orders]" role="measure" type="quantitative"/>
+      <column caption="Late Delivery Rate" datatype="real" name="[late_delivery_rate]" role="measure" type="quantitative"/>
+      <column caption="Late Orders" datatype="real" name="[late_orders]" role="measure" type="quantitative"/>
+      <column caption="Negative Review Rate" datatype="real" name="[negative_review_rate]" role="measure" type="quantitative"/>
+      <column caption="Product Revenue" datatype="real" name="[product_revenue]" role="measure" type="quantitative"/>
+      <column caption="Reviewed Orders" datatype="integer" name="[reviewed_orders]" role="measure" type="quantitative"/>
+      <extract count="-1" enabled="true" object-id="" units="records" user-specific="false">
+        <connection access_mode="readonly" author-locale="zh_CN" class="hyper" dbname="Data/tableau-temp/#TableauTemp_0etmz58070p0111fis3gr18pouha.hyper" default-settings="hyper" schema="Extract" sslmode="" tablename="Extract" update-time="09/15/2026 11:46:13 PM" username="tableau_internal_user">
+          <relation name="Extract" table="[Extract].[Extract]" type="table"/>
+          <metadata-records>
+            <metadata-record class="column">
+              <remote-name>analysis_start</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[analysis_start]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>analysis_start</remote-alias>
+              <ordinal>0</ordinal>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_kpis.csv_BEC55B9FDA65499E99C3A5EB76224213]</object-id>
+            </metadata-record>
+            <metadata-record class="column">
+              <remote-name>analysis_end</remote-name>
+              <remote-type>133</remote-type>
+              <local-name>[analysis_end]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>analysis_end</remote-alias>
+              <ordinal>1</ordinal>
+              <local-type>date</local-type>
+              <aggregation>Year</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_kpis.csv_BEC55B9FDA65499E99C3A5EB76224213]</object-id>
+            </metadata-record>
+            <metadata-record class="column">
+              <remote-name>delivered_orders</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[delivered_orders]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>delivered_orders</remote-alias>
+              <ordinal>2</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_kpis.csv_BEC55B9FDA65499E99C3A5EB76224213]</object-id>
+            </metadata-record>
+            <metadata-record class="column">
+              <remote-name>product_revenue</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[product_revenue]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>product_revenue</remote-alias>
+              <ordinal>3</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_kpis.csv_BEC55B9FDA65499E99C3A5EB76224213]</object-id>
+            </metadata-record>
+            <metadata-record class="column">
+              <remote-name>avg_order_value</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_order_value]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_order_value</remote-alias>
+              <ordinal>4</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_kpis.csv_BEC55B9FDA65499E99C3A5EB76224213]</object-id>
+            </metadata-record>
+            <metadata-record class="column">
+              <remote-name>avg_delivery_days</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_delivery_days]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_delivery_days</remote-alias>
+              <ordinal>5</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_kpis.csv_BEC55B9FDA65499E99C3A5EB76224213]</object-id>
+            </metadata-record>
+            <metadata-record class="column">
+              <remote-name>late_orders</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[late_orders]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>late_orders</remote-alias>
+              <ordinal>6</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_kpis.csv_BEC55B9FDA65499E99C3A5EB76224213]</object-id>
+            </metadata-record>
+            <metadata-record class="column">
+              <remote-name>late_delivery_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[late_delivery_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>late_delivery_rate</remote-alias>
+              <ordinal>7</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_kpis.csv_BEC55B9FDA65499E99C3A5EB76224213]</object-id>
+            </metadata-record>
+            <metadata-record class="column">
+              <remote-name>reviewed_orders</remote-name>
+              <remote-type>20</remote-type>
+              <local-name>[reviewed_orders]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>reviewed_orders</remote-alias>
+              <ordinal>8</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_kpis.csv_BEC55B9FDA65499E99C3A5EB76224213]</object-id>
+            </metadata-record>
+            <metadata-record class="column">
+              <remote-name>avg_review_score</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[avg_review_score]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>avg_review_score</remote-alias>
+              <ordinal>9</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_kpis.csv_BEC55B9FDA65499E99C3A5EB76224213]</object-id>
+            </metadata-record>
+            <metadata-record class="column">
+              <remote-name>negative_review_rate</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[negative_review_rate]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>negative_review_rate</remote-alias>
+              <ordinal>10</ordinal>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>true</contains-null>
+              <object-id>[tableau_kpis.csv_BEC55B9FDA65499E99C3A5EB76224213]</object-id>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering="alphabetic" measure-ordering="alphabetic" show-structure="true"/>
+      <semantic-values>
+        <semantic-value key="[Country].[Name]" value="&quot;美国&quot;"/>
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption="tableau_kpis.csv" id="tableau_kpis.csv_BEC55B9FDA65499E99C3A5EB76224213">
+            <properties context="">
+              <relation connection="textscan.0s96jzo051r9zd1gkli611p9oeem" name="tableau_kpis.csv" table="[tableau_kpis#csv]" type="table">
+                <columns character-set="UTF-8" header="yes" locale="en_US" separator=",">
+                  <column datatype="date" name="analysis_start" ordinal="0"/>
+                  <column datatype="date" name="analysis_end" ordinal="1"/>
+                  <column datatype="integer" name="delivered_orders" ordinal="2"/>
+                  <column datatype="real" name="product_revenue" ordinal="3"/>
+                  <column datatype="real" name="avg_order_value" ordinal="4"/>
+                  <column datatype="real" name="avg_delivery_days" ordinal="5"/>
+                  <column datatype="real" name="late_orders" ordinal="6"/>
+                  <column datatype="real" name="late_delivery_rate" ordinal="7"/>
+                  <column datatype="integer" name="reviewed_orders" ordinal="8"/>
+                  <column datatype="real" name="avg_review_score" ordinal="9"/>
+                  <column datatype="real" name="negative_review_rate" ordinal="10"/>
+                </columns>
+              </relation>
+            </properties>
+            <properties context="extract">
+              <relation name="Extract" table="[Extract].[Extract]" type="table"/>
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name="KPI Overview">
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="tableau_kpis" name="federated.0n6jrm1145x01b10n5ev31i1sjlh"/>
+          </datasources>
+          <datasource-dependencies datasource="federated.0n6jrm1145x01b10n5ev31i1sjlh">
+            <column caption="Avg Delivery Days" datatype="real" name="[avg_delivery_days]" role="measure" type="quantitative"/>
+            <column caption="Avg Order Value" datatype="real" name="[avg_order_value]" role="measure" type="quantitative"/>
+            <column caption="Delivered Orders" datatype="integer" name="[delivered_orders]" role="measure" type="quantitative"/>
+            <column caption="Late Delivery Rate" datatype="real" name="[late_delivery_rate]" role="measure" type="quantitative"/>
+            <column caption="Product Revenue" datatype="real" name="[product_revenue]" role="measure" type="quantitative"/>
+            <column-instance column="[avg_delivery_days]" derivation="Sum" name="[sum:avg_delivery_days:qk]" pivot="key" type="quantitative"/>
+            <column-instance column="[avg_order_value]" derivation="Sum" name="[sum:avg_order_value:qk]" pivot="key" type="quantitative"/>
+            <column-instance column="[delivered_orders]" derivation="Sum" name="[sum:delivered_orders:qk]" pivot="key" type="quantitative"/>
+            <column-instance column="[late_delivery_rate]" derivation="Sum" name="[sum:late_delivery_rate:qk]" pivot="key" type="quantitative"/>
+            <column-instance column="[product_revenue]" derivation="Sum" name="[sum:product_revenue:qk]" pivot="key" type="quantitative"/>
+          </datasource-dependencies>
+          <filter class="categorical" column="[federated.0n6jrm1145x01b10n5ev31i1sjlh].[:Measure Names]">
+            <groupfilter function="union" user:op="manual">
+              <groupfilter function="member" level="[:Measure Names]" member="&quot;[federated.0n6jrm1145x01b10n5ev31i1sjlh].[sum:avg_delivery_days:qk]&quot;"/>
+              <groupfilter function="member" level="[:Measure Names]" member="&quot;[federated.0n6jrm1145x01b10n5ev31i1sjlh].[sum:avg_order_value:qk]&quot;"/>
+              <groupfilter function="member" level="[:Measure Names]" member="&quot;[federated.0n6jrm1145x01b10n5ev31i1sjlh].[sum:delivered_orders:qk]&quot;"/>
+              <groupfilter function="member" level="[:Measure Names]" member="&quot;[federated.0n6jrm1145x01b10n5ev31i1sjlh].[sum:late_delivery_rate:qk]&quot;"/>
+              <groupfilter function="member" level="[:Measure Names]" member="&quot;[federated.0n6jrm1145x01b10n5ev31i1sjlh].[sum:product_revenue:qk]&quot;"/>
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0n6jrm1145x01b10n5ev31i1sjlh].[:Measure Names]</column>
+          </slices>
+          <aggregation value="true"/>
+        </view>
+        <style>
+          <style-rule element="cell">
+            <format attr="text-format" field="[federated.0n6jrm1145x01b10n5ev31i1sjlh].[sum:avg_delivery_days:qk]" value="n#,##0.00;-#,##0.00"/>
+            <format attr="text-format" field="[federated.0n6jrm1145x01b10n5ev31i1sjlh].[sum:avg_order_value:qk]" value="c&quot;R$ &quot;#,##0.00;-&quot;R$ &quot;#,##0.00"/>
+            <format attr="text-format" field="[federated.0n6jrm1145x01b10n5ev31i1sjlh].[sum:delivered_orders:qk]" value="N"/>
+            <format attr="text-format" field="[federated.0n6jrm1145x01b10n5ev31i1sjlh].[sum:late_delivery_rate:qk]" value="p0.00%"/>
+            <format attr="text-format" field="[federated.0n6jrm1145x01b10n5ev31i1sjlh].[sum:product_revenue:qk]" value="c&quot;R$ &quot;#,##0.00;-&quot;R$ &quot;#,##0.00"/>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option="selection-relaxation-allow">
+            <view>
+              <breakdown value="auto"/>
+            </view>
+            <mark class="Automatic"/>
+            <encodings>
+              <text column="[federated.0n6jrm1145x01b10n5ev31i1sjlh].[Multiple Values]"/>
+            </encodings>
+            <style>
+              <style-rule element="mark">
+                <format attr="mark-labels-show" value="true"/>
+                <format attr="mark-labels-cull" value="true"/>
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows/>
+        <cols>[federated.0n6jrm1145x01b10n5ev31i1sjlh].[:Measure Names]</cols>
+      </table>
+      <simple-id uuid="{11BF611F-A79D-4568-BC97-87CDC06CD671}"/>
+    </worksheet>
+    <worksheet name="Market Scale vs Delivery Risk">
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run bold="true" fontalignment="1" fontname="Menlo">Market Scale vs. Late-Delivery Risk</run>
+            <run fontalignment="1">Æ
+</run>
+            <run bold="true" fontalignment="1" fontname="Menlo">(Log Scale)</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="state_recommendations" name="federated.1u2efw001eayuc1b26b3f1cvisw0"/>
+          </datasources>
+          <datasource-dependencies datasource="federated.1u2efw001eayuc1b26b3f1cvisw0">
+            <column-instance column="[risk_flag]" derivation="Attribute" name="[attr:risk_flag:nk]" pivot="key" type="nominal"/>
+            <column caption="Baseline Score" datatype="real" name="[baseline_score]" role="measure" type="quantitative"/>
+            <column caption="Delivered Orders" datatype="integer" name="[delivered_orders]" role="measure" type="quantitative"/>
+            <column caption="Late Delivery Rate Pct" datatype="real" name="[late_delivery_rate_pct]" role="measure" type="quantitative"/>
+            <column caption="Negative Review Rate Pct" datatype="real" name="[negative_review_rate_pct]" role="measure" type="quantitative"/>
+            <column-instance column="[recommendation]" derivation="None" name="[none:recommendation:nk]" pivot="key" type="nominal"/>
+            <column-instance column="[state]" derivation="None" name="[none:state:nk]" pivot="key" type="nominal"/>
+            <column caption="Order Growth Pct" datatype="real" name="[order_growth_pct]" role="measure" type="quantitative"/>
+            <column caption="Recommendation" datatype="string" name="[recommendation]" role="dimension" type="nominal"/>
+            <column caption="Risk Flag" datatype="string" name="[risk_flag]" role="dimension" type="nominal"/>
+            <column caption="State" datatype="string" name="[state]" role="dimension" semantic-role="[State].[Name]" type="nominal"/>
+            <column-instance column="[baseline_score]" derivation="Sum" name="[sum:baseline_score:qk]" pivot="key" type="quantitative"/>
+            <column-instance column="[delivered_orders]" derivation="Sum" name="[sum:delivered_orders:qk]" pivot="key" type="quantitative"/>
+            <column-instance column="[late_delivery_rate_pct]" derivation="Sum" name="[sum:late_delivery_rate_pct:qk]" pivot="key" type="quantitative"/>
+            <column-instance column="[negative_review_rate_pct]" derivation="Sum" name="[sum:negative_review_rate_pct:qk]" pivot="key" type="quantitative"/>
+            <column-instance column="[order_growth_pct]" derivation="Sum" name="[sum:order_growth_pct:qk]" pivot="key" type="quantitative"/>
+          </datasource-dependencies>
+          <aggregation value="true"/>
+        </view>
+        <style>
+          <style-rule element="axis">
+            <encoding attr="space" class="0" field="[federated.1u2efw001eayuc1b26b3f1cvisw0].[sum:delivered_orders:qk]" field-type="quantitative" max="54604" min="200" range-type="fixed" scale="log" scope="cols" type="space"/>
+            <format attr="title" class="0" field="[federated.1u2efw001eayuc1b26b3f1cvisw0].[sum:late_delivery_rate_pct:qk]" scope="rows" value="Late Delivery Rate (%)"/>
+            <format attr="title" class="0" field="[federated.1u2efw001eayuc1b26b3f1cvisw0].[sum:delivered_orders:qk]" scope="cols" value="Delivered Orders (Log Scale)"/>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option="selection-relaxation-allow">
+            <view>
+              <breakdown value="auto"/>
+            </view>
+            <mark class="Automatic"/>
+            <encodings>
+              <color column="[federated.1u2efw001eayuc1b26b3f1cvisw0].[none:recommendation:nk]"/>
+              <size column="[federated.1u2efw001eayuc1b26b3f1cvisw0].[sum:baseline_score:qk]"/>
+              <tooltip column="[federated.1u2efw001eayuc1b26b3f1cvisw0].[attr:risk_flag:nk]"/>
+              <tooltip column="[federated.1u2efw001eayuc1b26b3f1cvisw0].[sum:order_growth_pct:qk]"/>
+              <tooltip column="[federated.1u2efw001eayuc1b26b3f1cvisw0].[sum:negative_review_rate_pct:qk]"/>
+              <text column="[federated.1u2efw001eayuc1b26b3f1cvisw0].[none:state:nk]"/>
+            </encodings>
+            <style>
+              <style-rule element="mark">
+                <format attr="mark-labels-show" value="true"/>
+                <format attr="mark-labels-cull" value="true"/>
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1u2efw001eayuc1b26b3f1cvisw0].[sum:late_delivery_rate_pct:qk]</rows>
+        <cols>[federated.1u2efw001eayuc1b26b3f1cvisw0].[sum:delivered_orders:qk]</cols>
+      </table>
+      <simple-id uuid="{3D7BE941-9309-4DD1-9A90-6807B395D5A0}"/>
+    </worksheet>
+    <worksheet name="State Opportunity Ranking">
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run fontalignment="1" fontcolor="#000000" fontname="Menlo">State Opportunity Ranking</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption="state_recommendations" name="federated.1u2efw001eayuc1b26b3f1cvisw0"/>
+          </datasources>
+          <datasource-dependencies datasource="federated.1u2efw001eayuc1b26b3f1cvisw0">
+            <column-instance column="[risk_flag]" derivation="Attribute" name="[attr:risk_flag:nk]" pivot="key" type="nominal"/>
+            <column caption="Baseline Score" datatype="real" name="[baseline_score]" role="measure" type="quantitative"/>
+            <column caption="Delivered Orders" datatype="integer" name="[delivered_orders]" role="measure" type="quantitative"/>
+            <column caption="Late Delivery Rate Pct" datatype="real" name="[late_delivery_rate_pct]" role="measure" type="quantitative"/>
+            <column caption="Negative Review Rate Pct" datatype="real" name="[negative_review_rate_pct]" role="measure" type="quantitative"/>
+            <column-instance column="[recommendation]" derivation="None" name="[none:recommendation:nk]" pivot="key" type="nominal"/>
+            <column-instance column="[state]" derivation="None" name="[none:state:nk]" pivot="key" type="nominal"/>
+            <column caption="Order Growth Pct" datatype="real" name="[order_growth_pct]" role="measure" type="quantitative"/>
+            <column caption="Recommendation" datatype="string" name="[recommendation]" role="dimension" type="nominal"/>
+            <column caption="Risk Flag" datatype="string" name="[risk_flag]" role="dimension" type="nominal"/>
+            <column caption="State" datatype="string" name="[state]" role="dimension" semantic-role="[State].[Name]" type="nominal"/>
+            <column-instance column="[baseline_score]" derivation="Sum" name="[sum:baseline_score:qk]" pivot="key" type="quantitative"/>
+            <column-instance column="[delivered_orders]" derivation="Sum" name="[sum:delivered_orders:qk]" pivot="key" type="quantitative"/>
+            <column-instance column="[late_delivery_rate_pct]" derivation="Sum" name="[sum:late_delivery_rate_pct:qk]" pivot="key" type="quantitative"/>
+            <column-instance column="[negative_review_rate_pct]" derivation="Sum" name="[sum:negative_review_rate_pct:qk]" pivot="key" type="quantitative"/>
+            <column-instance column="[order_growth_pct]" derivation="Sum" name="[sum:order_growth_pct:qk]" pivot="key" type="quantitative"/>
+          </datasource-dependencies>
+          <shelf-sorts>
+            <shelf-sort-v2 dimension-to-sort="[federated.1u2efw001eayuc1b26b3f1cvisw0].[none:state:nk]" direction="DESC" is-on-innermost-dimension="true" measure-to-sort-by="[federated.1u2efw001eayuc1b26b3f1cvisw0].[sum:baseline_score:qk]" shelf="rows"/>
+          </shelf-sorts>
+          <aggregation value="true"/>
+        </view>
+        <style>
+          <style-rule element="axis">
+            <format attr="title" class="0" field="[federated.1u2efw001eayuc1b26b3f1cvisw0].[sum:baseline_score:qk]" scope="cols" value="Opportunity Score (0–100)"/>
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option="selection-relaxation-allow">
+            <view>
+              <breakdown value="auto"/>
+            </view>
+            <mark class="Automatic"/>
+            <encodings>
+              <color column="[federated.1u2efw001eayuc1b26b3f1cvisw0].[none:recommendation:nk]"/>
+              <tooltip column="[federated.1u2efw001eayuc1b26b3f1cvisw0].[sum:delivered_orders:qk]"/>
+              <tooltip column="[federated.1u2efw001eayuc1b26b3f1cvisw0].[sum:late_delivery_rate_pct:qk]"/>
+              <tooltip column="[federated.1u2efw001eayuc1b26b3f1cvisw0].[sum:negative_review_rate_pct:qk]"/>
+              <tooltip column="[federated.1u2efw001eayuc1b26b3f1cvisw0].[sum:order_growth_pct:qk]"/>
+              <tooltip column="[federated.1u2efw001eayuc1b26b3f1cvisw0].[attr:risk_flag:nk]"/>
+              <text column="[federated.1u2efw001eayuc1b26b3f1cvisw0].[sum:baseline_score:qk]"/>
+            </encodings>
+            <style>
+              <style-rule element="mark">
+                <format attr="mark-labels-show" value="true"/>
+                <format attr="mark-labels-cull" value="true"/>
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.1u2efw001eayuc1b26b3f1cvisw0].[none:state:nk]</rows>
+        <cols>[federated.1u2efw001eayuc1b26b3f1cvisw0].[sum:baseline_score:qk]</cols>
+      </table>
+      <simple-id uuid="{4E6A31EF-B0F3-4C4A-B3FD-FC720C4F10C5}"/>
+    </worksheet>
+  </worksheets>
+  <dashboards>
+    <dashboard enable-sort-zone-taborder="true" name="Where Should Olist Grow Next?">
+      <style/>
+      <size maxheight="900" maxwidth="1200" minheight="900" minwidth="1200" sizing-mode="fixed"/>
+      <zones>
+        <zone h="100000" id="19" type-v2="layout-basic" w="100000" x="0" y="0">
+          <zone h="98222" id="27" param="vert" type-v2="layout-flow" w="98666" x="667" y="889">
+            <zone h="4667" id="28" type-v2="title" w="98666" x="667" y="889">
+              <zone-style>
+                <format attr="border-color" value="#000000"/>
+                <format attr="border-style" value="none"/>
+                <format attr="border-width" value="0"/>
+                <format attr="margin" value="4"/>
+              </zone-style>
+            </zone>
+            <zone h="93555" id="22" param="horz" type-v2="layout-flow" w="98666" x="667" y="5556">
+              <zone h="93555" id="20" type-v2="layout-basic" w="75333" x="667" y="5556">
+                <zone h="42222" id="18" name="State Opportunity Ranking" w="75333" x="667" y="16667">
+                  <zone-style>
+                    <format attr="border-color" value="#000000"/>
+                    <format attr="border-style" value="none"/>
+                    <format attr="border-width" value="0"/>
+                    <format attr="margin" value="4"/>
+                  </zone-style>
+                </zone>
+                <zone h="40222" id="24" name="Market Scale vs Delivery Risk" w="75333" x="667" y="58889">
+                  <zone-style>
+                    <format attr="border-color" value="#000000"/>
+                    <format attr="border-style" value="none"/>
+                    <format attr="border-width" value="0"/>
+                    <format attr="margin" value="4"/>
+                  </zone-style>
+                </zone>
+                <zone h="11111" id="34" name="KPI Overview" w="75333" x="667" y="5556">
+                  <zone-style>
+                    <format attr="border-color" value="#000000"/>
+                    <format attr="border-style" value="none"/>
+                    <format attr="border-width" value="0"/>
+                    <format attr="margin" value="4"/>
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone fixed-size="280" h="93555" id="21" is-fixed="true" param="vert" type-v2="layout-flow" w="23333" x="76000" y="5556">
+                <zone h="14000" id="23" name="State Opportunity Ranking" pane-specification-id="0" param="[federated.1u2efw001eayuc1b26b3f1cvisw0].[none:recommendation:nk]" type-v2="color" w="23333" x="76000" y="5556">
+                  <zone-style>
+                    <format attr="border-color" value="#000000"/>
+                    <format attr="border-style" value="none"/>
+                    <format attr="border-width" value="0"/>
+                    <format attr="margin" value="4"/>
+                  </zone-style>
+                </zone>
+                <zone h="14000" id="25" name="Market Scale vs Delivery Risk" pane-specification-id="0" param="[federated.1u2efw001eayuc1b26b3f1cvisw0].[sum:baseline_score:qk]" type-v2="size" w="23333" x="76000" y="19556">
+                  <zone-style>
+                    <format attr="border-color" value="#000000"/>
+                    <format attr="border-style" value="none"/>
+                    <format attr="border-width" value="0"/>
+                    <format attr="margin" value="4"/>
+                  </zone-style>
+                </zone>
+              </zone>
+            </zone>
+          </zone>
+          <zone-style>
+            <format attr="border-color" value="#000000"/>
+            <format attr="border-style" value="none"/>
+            <format attr="border-width" value="0"/>
+            <format attr="margin" value="8"/>
+          </zone-style>
+        </zone>
+      </zones>
+      <devicelayouts>
+        <devicelayout name="Desktop"/>
+        <devicelayout auto-generated="true" name="Phone">
+          <size maxheight="950" minheight="950" sizing-mode="vscroll"/>
+          <zones>
+            <zone h="100000" id="36" type-v2="layout-basic" w="100000" x="0" y="0">
+              <zone h="98222" id="35" param="vert" type-v2="layout-flow" w="98666" x="667" y="889">
+                <zone h="4667" id="28" type-v2="title" w="98666" x="667" y="889">
+                  <zone-style>
+                    <format attr="border-color" value="#000000"/>
+                    <format attr="border-style" value="none"/>
+                    <format attr="border-width" value="0"/>
+                    <format attr="margin" value="4"/>
+                    <format attr="padding" value="0"/>
+                  </zone-style>
+                </zone>
+                <zone fixed-size="203" h="23388" id="34" is-fixed="true" name="KPI Overview" w="75333" x="667" y="5556">
+                  <zone-style>
+                    <format attr="border-color" value="#000000"/>
+                    <format attr="border-style" value="none"/>
+                    <format attr="border-width" value="0"/>
+                    <format attr="margin" value="4"/>
+                    <format attr="padding" value="0"/>
+                  </zone-style>
+                </zone>
+                <zone fixed-size="203" h="23389" id="18" is-fixed="true" name="State Opportunity Ranking" w="75333" x="667" y="28944">
+                  <zone-style>
+                    <format attr="border-color" value="#000000"/>
+                    <format attr="border-style" value="none"/>
+                    <format attr="border-width" value="0"/>
+                    <format attr="margin" value="4"/>
+                    <format attr="padding" value="0"/>
+                  </zone-style>
+                </zone>
+                <zone h="14000" id="23" name="State Opportunity Ranking" pane-specification-id="0" param="[federated.1u2efw001eayuc1b26b3f1cvisw0].[none:recommendation:nk]" type-v2="color" w="23333" x="76000" y="5556">
+                  <zone-style>
+                    <format attr="border-color" value="#000000"/>
+                    <format attr="border-style" value="none"/>
+                    <format attr="border-width" value="0"/>
+                    <format attr="margin" value="4"/>
+                    <format attr="padding" value="0"/>
+                  </zone-style>
+                </zone>
+                <zone fixed-size="280" h="46778" id="24" is-fixed="true" name="Market Scale vs Delivery Risk" w="75333" x="667" y="52333">
+                  <zone-style>
+                    <format attr="border-color" value="#000000"/>
+                    <format attr="border-style" value="none"/>
+                    <format attr="border-width" value="0"/>
+                    <format attr="margin" value="4"/>
+                    <format attr="padding" value="0"/>
+                  </zone-style>
+                </zone>
+                <zone h="14000" id="25" name="Market Scale vs Delivery Risk" pane-specification-id="0" param="[federated.1u2efw001eayuc1b26b3f1cvisw0].[sum:baseline_score:qk]" type-v2="size" w="23333" x="76000" y="19556">
+                  <zone-style>
+                    <format attr="border-color" value="#000000"/>
+                    <format attr="border-style" value="none"/>
+                    <format attr="border-width" value="0"/>
+                    <format attr="margin" value="4"/>
+                    <format attr="padding" value="0"/>
+                  </zone-style>
+                </zone>
+              </zone>
+              <zone-style>
+                <format attr="border-color" value="#000000"/>
+                <format attr="border-style" value="none"/>
+                <format attr="border-width" value="0"/>
+                <format attr="margin" value="8"/>
+              </zone-style>
+            </zone>
+          </zones>
+        </devicelayout>
+      </devicelayouts>
+      <simple-id uuid="{7EDB6E3D-A895-4178-9FE6-520650612A2F}"/>
+    </dashboard>
+  </dashboards>
+  <windows source-height="51">
+    <window class="worksheet" name="State Opportunity Ranking">
+      <cards>
+        <edge name="left">
+          <strip size="160">
+            <card type="pages"/>
+            <card type="filters"/>
+            <card type="marks"/>
+          </strip>
+        </edge>
+        <edge name="top">
+          <strip size="2147483647">
+            <card type="columns"/>
+          </strip>
+          <strip size="2147483647">
+            <card type="rows"/>
+          </strip>
+          <strip size="31">
+            <card type="title"/>
+          </strip>
+        </edge>
+        <edge name="right">
+          <strip size="160">
+            <card pane-specification-id="0" param="[federated.1u2efw001eayuc1b26b3f1cvisw0].[none:recommendation:nk]" type="color"/>
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type="entire-view"/>
+      </viewpoint>
+      <simple-id uuid="{8D106745-F486-442F-8CB8-99A65826631A}"/>
+    </window>
+    <window class="worksheet" name="Market Scale vs Delivery Risk">
+      <cards>
+        <edge name="left">
+          <strip size="160">
+            <card type="pages"/>
+            <card type="filters"/>
+            <card type="marks"/>
+          </strip>
+        </edge>
+        <edge name="top">
+          <strip size="2147483647">
+            <card type="columns"/>
+          </strip>
+          <strip size="2147483647">
+            <card type="rows"/>
+          </strip>
+          <strip size="31">
+            <card type="title"/>
+          </strip>
+        </edge>
+        <edge name="right">
+          <strip size="209">
+            <card pane-specification-id="0" param="[federated.1u2efw001eayuc1b26b3f1cvisw0].[none:recommendation:nk]" type="color"/>
+            <card pane-specification-id="0" param="[federated.1u2efw001eayuc1b26b3f1cvisw0].[sum:baseline_score:qk]" type="size"/>
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type="fit-width"/>
+      </viewpoint>
+      <simple-id uuid="{AF7C4430-9F97-47BD-99E7-61CF927A82E6}"/>
+    </window>
+    <window class="dashboard" name="Where Should Olist Grow Next?" maximized="true">
+      <viewpoints>
+        <viewpoint name="KPI Overview">
+          <zoom type="fit-width"/>
+        </viewpoint>
+        <viewpoint name="Market Scale vs Delivery Risk">
+          <zoom type="entire-view"/>
+        </viewpoint>
+        <viewpoint name="State Opportunity Ranking">
+          <zoom type="entire-view"/>
+        </viewpoint>
+      </viewpoints>
+      <active id="34"/>
+      <device-preview>
+        <device is-portrait="true" type="Desktop"/>
+      </device-preview>
+      <simple-id uuid="{58C63C86-6490-4ABA-A06A-B6D0B7582115}"/>
+    </window>
+    <window class="worksheet" name="KPI Overview">
+      <cards>
+        <edge name="left">
+          <strip size="117">
+            <card type="pages"/>
+            <card type="filters"/>
+            <card type="marks"/>
+            <card type="measures"/>
+          </strip>
+        </edge>
+        <edge name="top">
+          <strip size="2147483647">
+            <card type="columns"/>
+          </strip>
+          <strip size="2147483647">
+            <card type="rows"/>
+          </strip>
+          <strip size="31">
+            <card type="title"/>
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <zoom type="fit-width"/>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0n6jrm1145x01b10n5ev31i1sjlh].[:Measure Names]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid="{38C5EF92-5DA9-49A1-86EC-4EBBA51BA220}"/>
+    </window>
+  </windows>
+  </workbook>
