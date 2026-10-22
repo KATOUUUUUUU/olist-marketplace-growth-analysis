@@ -1,0 +1,2 @@
+analysis_start,analysis_end,delivered_orders,product_revenue,avg_order_value,avg_delivery_days,late_orders,late_delivery_rate,reviewed_orders,avg_review_score,negative_review_rate
+2017-01-01,2018-08-31,96203,13179777.95,137.0,12.48,7822.0,0.08130723574108915,95560,4.16,0.12758476349937212

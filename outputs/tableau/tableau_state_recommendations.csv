@@ -1,0 +1,17 @@
+state,baseline_rank,baseline_score,delivered_orders,orders_per_seller,recommendation,risk_flag,late_delivery_rate,negative_review_rate,order_growth_rate
+SP,1,84.53,31907,17.26,Core market,Relatively stable,0.0603,0.1059,1.7196
+DF,2,59.53,1602,53.4,Pilot / validate data,Limited sample,0.0655,0.1261,1.9169
+PR,3,59.0,3904,11.19,Priority expansion,Relatively stable,0.047400000000000005,0.10369999999999999,1.2724
+MG,4,57.43,8693,35.63,Priority expansion,Relatively stable,0.0584,0.1197,1.3256000000000001
+MT,5,53.5,679,169.75,Pilot / validate data,Limited sample,0.061900000000000004,0.12179999999999999,1.3448
+MS,6,50.01,558,111.6,Pilot / validate data,High operational risk,0.12539999999999998,0.1349,1.7959
+RS,7,49.7,4123,31.96,Selective expansion / monitor,Relatively stable,0.065,0.11019999999999999,0.9747
+GO,8,48.14,1482,37.05,Pilot / validate data,Limited sample,0.0762,0.1293,1.3007
+SC,9,45.72,2730,14.37,Selective expansion / monitor,Relatively stable,0.0974,0.1286,1.227
+PE,10,40.36,1210,134.44,Pilot / validate data,High operational risk,0.1107,0.1457,1.3799000000000001
+ES,11,36.27,1523,66.22,Pilot / validate data,High operational risk,0.1241,0.13970000000000002,1.1996
+RJ,12,33.4,9307,54.43,Fix operations first,High operational risk,0.11779999999999999,0.1753,1.139
+BA,13,29.72,2497,131.42,Fix operations first,High operational risk,0.1362,0.17120000000000002,1.2387000000000001
+CE,14,24.65,954,73.38,Pilot / validate data,High operational risk,0.1593,0.1686,0.972
+PA,15,16.58,722,722.0,Pilot / validate data,High operational risk,0.1247,0.17579999999999998,0.684
+MA,16,9.85,531,531.0,Pilot / validate data,High operational risk,0.16760000000000003,0.17989999999999998,0.8703
