@@ -1,0 +1,6 @@
+-r requirements.txt
+tableauhyperapi
+lxml
+nbformat
+nbclient
+reportlab
